@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ThrowNums</string>
+    <string name="random_num">扔到的点数是 : %1$d</string>
+</resources>

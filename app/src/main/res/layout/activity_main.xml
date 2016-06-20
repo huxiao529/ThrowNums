@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.l99.thrownums.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/shape"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:background="@drawable/shape_round">
+        <com.l99.thrownums.DiyLinearLayout
+            android:id="@+id/line1"
+            android:layout_width="40dp"
+            android:layout_height="120dp"
+            />
+        <com.l99.thrownums.DiyLinearLayout
+            android:id="@+id/line2"
+            android:layout_width="40dp"
+            android:layout_height="120dp"
+            />
+        <com.l99.thrownums.DiyLinearLayout
+            android:id="@+id/line3"
+            android:layout_width="40dp"
+            android:layout_height="120dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_shake"
+        android:layout_below="@id/shape"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="摇一摇"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_below="@id/btn_shake"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="200dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        />
+</RelativeLayout>
